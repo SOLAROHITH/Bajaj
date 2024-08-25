@@ -6,7 +6,7 @@ dotenv.config();
 const app = express();
 app.use(express.json());
 
-app.get('/bfhi/', (req, res) => {
+app.get('/bfhi', (req, res) => {
     res.status(200).send({ "operation_code": 1 });
 });
 
@@ -41,6 +41,6 @@ app.post('/bfhi', async (req, res) => {
     res.status(200).send(response);
 });
 
-app.listen(process.env.PORT || 3000, () => {
+app.listen(process.env.PORT/bfhi || 3000/bfhi, () => {
     console.log(`Server running on http://localhost:${process.env.PORT || 3000}/`);
 });
